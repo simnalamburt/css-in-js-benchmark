@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production --progress",
     "test": "flow && prettier --check .",
     "fmt": "prettier --write ."
   },
