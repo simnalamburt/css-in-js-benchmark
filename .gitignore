@@ -1,5 +1,6 @@
 # Build results
 /dist/*
+!/dist/index.html
 
 # Yarn 2
 .yarn/*
