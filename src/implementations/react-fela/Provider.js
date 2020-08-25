@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRenderer } from 'fela';
-import { Provider as FelaProvider } from 'react-fela';
+import { RendererProvider as FelaProvider } from 'react-fela';
 import View from './View';
 
 const renderer = createRenderer();
