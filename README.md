@@ -43,3 +43,14 @@ tree. Some libraries choose to inject new styles for each "dynamic style",
 whereas others choose to use inline styles. Libraries without built-in support
 for dynamic styles (i.e., they rely on user-authored inline styles) are not
 included.
+
+&nbsp;
+
+--------
+*css-in-js-benchmark* is primarily distributed under the terms of both the
+[Apache License (Version 2.0)] and the [MIT license]. See [COPYRIGHT] for
+details.
+
+[MIT license]: LICENSE-MIT
+[Apache License (Version 2.0)]: LICENSE-APACHE
+[COPYRIGHT]: COPYRIGHT
