@@ -13,7 +13,9 @@ open index.html
 open dist/report.html
 ```
 
-![Sample image]
+![Firefox benchmark result]
+
+![Chromium benchmark result]
 
 This project is fork of [react-native-web].
 
@@ -60,7 +62,8 @@ included.
 details.
 
 [Try it now!]: https://simnalamburt.github.io/css-in-js-benchmark/
-[Sample image]: https://raw.githubusercontent.com/simnalamburt/i/master/css-in-js-benchmark/sample.png
+[Firefox benchmark result]: https://raw.githubusercontent.com/simnalamburt/i/master/css-in-js-benchmark/sample.png
+[Chromium benchmark result]: https://raw.githubusercontent.com/simnalamburt/i/master/css-in-js-benchmark/sample-chromium.png
 [react-native-web]: https://github.com/necolas/react-native-web
 
 [MIT license]: LICENSE-MIT
