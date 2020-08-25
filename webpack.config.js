@@ -1,15 +1,6 @@
 const path = require('path');
 
-const appDirectory = path.resolve(__dirname);
-
 module.exports = {
-  mode: 'production',
-  context: __dirname,
-  entry: './src/index',
-  output: {
-    path: path.resolve(appDirectory, 'dist'),
-    filename: 'bundle.js'
-  },
   module: {
     rules: [
       {
@@ -28,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        include: [path.resolve(appDirectory, 'src')],
+        include: [path.resolve(__dirname, 'src')],
         use: {
           loader: 'babel-loader',
           options: {
