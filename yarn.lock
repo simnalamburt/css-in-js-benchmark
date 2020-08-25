@@ -1312,6 +1312,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion-v11/styled@npm:@emotion/styled@^11.0.0-next.15":
+  version: 11.0.0-next.15
+  resolution: "@emotion/styled@npm:11.0.0-next.15"
+  dependencies:
+    "@babel/runtime": ^7.7.2
+    "@emotion/babel-plugin": ^11.0.0-next.15
+    "@emotion/is-prop-valid": 0.9.0-next.1
+    "@emotion/serialize": ^1.0.0-next.3
+    "@emotion/utils": 1.0.0-next.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@emotion/react": ^11.0.0-next.15
+    "@types/react": "*"
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: c7138550015ba1f4edcaa374df3c44c1827067f1972042b9b5338ebd53f97c34f8bcfd4845ce068b01257b1c52a70545d81b499ae1b4ebd8638dd07764aff501
+  languageName: node
+  linkType: hard
+
 "@emotion/babel-plugin@npm:^11.0.0-next.15":
   version: 11.0.0-next.15
   resolution: "@emotion/babel-plugin@npm:11.0.0-next.15"
@@ -1401,6 +1424,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:0.9.0-next.1":
+  version: 0.9.0-next.1
+  resolution: "@emotion/is-prop-valid@npm:0.9.0-next.1"
+  dependencies:
+    "@emotion/memoize": 0.7.3
+  checksum: 6fea192cac53424828dd360fde96df23cbc3aba82c2791d3fb45314986bbbeeffc44b3366d1b1f801564c9d1e5bc548c254e0e5ddba9e513ff4710d88da2ac0d
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^0.7.3":
   version: 0.7.3
   resolution: "@emotion/is-prop-valid@npm:0.7.3"
@@ -1414,6 +1446,13 @@ __metadata:
   version: 0.7.1
   resolution: "@emotion/memoize@npm:0.7.1"
   checksum: d0ee2e463dcd46013a575a2a3ddcc46bcc72d0d3c78289139b9f0a81510d8c1a5d8417ffdee56d23117497b8caa974060172ae896cf4bf7e22c3c214d01432a4
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.3":
+  version: 0.7.3
+  resolution: "@emotion/memoize@npm:0.7.3"
+  checksum: 65152d9503c3c438adc56f8836de22883fa67cd6f4a6d4b177269c98383ac5949621e13152859149d304b7bd22bc4e5f0131617fccd1a79df7a1a77fbddcb49e
   languageName: node
   linkType: hard
 
@@ -6650,6 +6689,7 @@ fsevents@^1.2.7:
     "@babel/preset-env": ^7.11.0
     "@babel/preset-flow": ^7.10.4
     "@babel/preset-react": ^7.10.4
+    "@emotion-v11/styled": "npm:@emotion/styled@^11.0.0-next.15"
     "@emotion/babel-plugin": ^11.0.0-next.15
     "@emotion/core": ^10.0.35
     "@emotion/css": ^10.0.27
