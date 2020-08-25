@@ -1,20 +1,19 @@
-# benchmarks
+CSS-in-JS benchmark
+========
+Benchmarks of vairous CSS-in-JS libraries
 
-Try the [benchmarks app](https://necolas.github.io/react-native-web/benchmarks) online.
+```bash
+yarn
+yarn build
 
-To run the benchmarks locally:
+# Benchmark
+open dist/index.html
 
+# Bundle size analysis
+open dist/report.html
 ```
-yarn benchmarks
-open ./packages/benchmarks/dist/index.html
-```
 
-Develop against these benchmarks:
-
-```
-yarn compile --watch
-yarn benchmarks --watch
-```
+&nbsp;
 
 ## Notes
 
@@ -42,6 +41,8 @@ tree. Some libraries choose to inject new styles for each "dynamic style",
 whereas others choose to use inline styles. Libraries without built-in support
 for dynamic styles (i.e., they rely on user-authored inline styles) are not
 included.
+
+&nbsp;
 
 ## Example results
 
