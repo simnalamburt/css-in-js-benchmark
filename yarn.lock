@@ -1312,6 +1312,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion-v11/css@npm:@emotion/css@^11.0.0-next.15":
+  version: 11.0.0-next.15
+  resolution: "@emotion/css@npm:11.0.0-next.15"
+  dependencies:
+    "@emotion/babel-plugin": ^11.0.0-next.15
+    "@emotion/cache": ^11.0.0-next.15
+    "@emotion/serialize": ^1.0.0-next.3
+    "@emotion/sheet": 1.0.0-next.3
+    "@emotion/utils": 1.0.0-next.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+  checksum: 4345b2ef2f18676050bda900e7284365dea946bea2eb5cc2511413dddbe946ddb67ddd2a87d002fbd0f843f3d3c5571e9b06bab0770af2cdb31697502bf69c95
+  languageName: node
+  linkType: hard
+
 "@emotion-v11/styled@npm:@emotion/styled@^11.0.0-next.15":
   version: 11.0.0-next.15
   resolution: "@emotion/styled@npm:11.0.0-next.15"
@@ -6689,6 +6707,7 @@ fsevents@^1.2.7:
     "@babel/preset-env": ^7.11.0
     "@babel/preset-flow": ^7.10.4
     "@babel/preset-react": ^7.10.4
+    "@emotion-v11/css": "npm:@emotion/css@^11.0.0-next.15"
     "@emotion-v11/styled": "npm:@emotion/styled@^11.0.0-next.15"
     "@emotion/babel-plugin": ^11.0.0-next.15
     "@emotion/core": ^10.0.35
