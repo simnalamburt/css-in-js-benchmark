@@ -33,7 +33,6 @@
     "@babel/preset-flow": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
-    "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-react-native-web": "0.13.8",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^4.2.2",
