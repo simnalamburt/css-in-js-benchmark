@@ -115,13 +115,13 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
     this._samples = [];
   }
 
-  componentWillReceiveProps(nextProps: BenchmarkPropsType) {
+  UNSAFE_componentWillReceiveProps(nextProps: BenchmarkPropsType) {
     if (nextProps) {
       this.setState(state => ({ componentProps: nextProps.getComponentProps(state.cycle) }));
     }
   }
 
-  componentWillUpdate(nextProps: BenchmarkPropsType, nextState: BenchmarkStateType) {
+  UNSAFE_componentWillUpdate(nextProps: BenchmarkPropsType, nextState: BenchmarkStateType) {
     if (nextState.running && !this.state.running) {
       this._startTime = Timing.now();
     }
