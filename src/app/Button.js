@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableHighlight, Text } from 'react-native';
+import { StyleSheet, TouchableHighlight, Text } from 'react-native-web';
 import React, { Component } from 'react';
 
 export default class Button extends Component<*> {

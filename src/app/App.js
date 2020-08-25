@@ -1,5 +1,5 @@
 import Benchmark from './Benchmark';
-import { Picker, StyleSheet, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Picker, StyleSheet, ScrollView, TouchableOpacity, View } from 'react-native-web';
 import React, { Component } from 'react';
 import Button from './Button';
 import { IconClear, IconEye } from './Icons';

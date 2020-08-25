@@ -1,7 +1,7 @@
 /* @noflow */
 
 import Text from './Text';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native-web';
 import React, { Fragment } from 'react';
 
 const fmt = (time: number) => {

@@ -1,5 +1,5 @@
 import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment';
-import { Dimensions, Platform } from 'react-native';
+import { Dimensions, Platform } from 'react-native-web';
 
 const baseFontSize = 14;
 const baseUnit = 1.3125;

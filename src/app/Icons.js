@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { unstable_createElement as createElement, StyleSheet } from 'react-native';
+import { unstable_createElement as createElement, StyleSheet } from 'react-native-web';
 
 const styles = StyleSheet.create({
   root: {

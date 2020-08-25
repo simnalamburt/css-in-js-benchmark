@@ -80,10 +80,5 @@ module.exports = {
       analyzerMode: 'static',
       openAnalyzer: false
     })
-  ],
-  resolve: {
-    alias: {
-      'react-native': 'react-native-web'
-    }
-  }
+  ]
 };
