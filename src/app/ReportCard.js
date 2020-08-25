@@ -28,7 +28,7 @@ class ReportCard extends React.PureComponent {
       <View style={styles.root}>
         <View style={styles.left}>
           <Text numberOfLines={1} style={styles.bold}>
-            {`${libraryName}${libraryVersion ? '@' + libraryVersion : ''}`}
+            {`${libraryName} ${libraryVersion ?? ''}`}
           </Text>
           <Text numberOfLines={1}>
             {benchmarkName} {sampleCountText}

@@ -23,10 +23,10 @@ type ImplementationType = {
 const toImplementations = (context: Object): Array<ImplementationType> =>
   context.keys().map(path => {
     const components = context(path).default;
-    const dir = path.split('/')[1];
-    const name =
-      dir === 'emotion' ? '@emotion/core' : dir === 'emotion-v11' ? '@emotion/react' : dir;
-    const version = dependencies[name] || '';
+    const name = path.split('/')[1];
+    const packageName =
+      name === 'emotion' ? '@emotion/core' : name === 'emotion-v11' ? '@emotion/react' : name;
+    const version = dependencies[packageName] || '';
     return { components, name, version };
   });
 
