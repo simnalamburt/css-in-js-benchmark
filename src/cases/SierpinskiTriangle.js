@@ -5,8 +5,6 @@ import { interpolatePurples, interpolateBuPu, interpolateRdPu } from 'd3-scale-c
 const targetSize = 10;
 
 class SierpinskiTriangle extends React.Component {
-  static displayName = 'SierpinskiTriangle';
-
   static benchmarkType = BenchmarkType.UPDATE;
 
   static defaultProps = {

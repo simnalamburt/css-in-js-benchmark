@@ -94,8 +94,6 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
   _startTime: number;
   _samples: Array<SampleTimingType>;
 
-  static displayName = 'Benchmark';
-
   static defaultProps = {
     sampleCount: 50,
     timeout: 10000, // 10 seconds

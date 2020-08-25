@@ -2,8 +2,6 @@ import { BenchmarkType } from '../app/Benchmark';
 import React, { Component } from 'react';
 
 class Tree extends Component {
-  static displayName = 'Tree';
-
   static benchmarkType = BenchmarkType.MOUNT;
 
   render() {

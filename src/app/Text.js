@@ -4,8 +4,6 @@ import { bool } from 'prop-types';
 import { colors } from './theme';
 
 class AppText extends React.Component {
-  static displayName = '@app/Text';
-
   static contextTypes = {
     isInAParentText: bool
   };

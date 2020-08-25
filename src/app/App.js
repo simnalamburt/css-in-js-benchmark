@@ -11,8 +11,6 @@ import { colors } from './theme';
 const Overlay = () => <View style={[StyleSheet.absoluteFill, { zIndex: 2 }]} />;
 
 export default class App extends Component {
-  static displayName = '@app/App';
-
   constructor(props, context) {
     super(props, context);
     const currentBenchmarkName = Object.keys(props.tests)[0];
