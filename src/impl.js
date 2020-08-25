@@ -23,17 +23,25 @@ type ImplementationType = {
 function packageFromDirname(name) {
   switch (name) {
     case 'emotion-css':
+    case 'emotion-css-without-plugin':
       return '@emotion/core';
     case 'emotion-css-v11':
+    case 'emotion-css-v11-without-plugin':
       return '@emotion/react';
     case 'emotion-styled':
+    case 'emotion-styled-without-plugin':
       return '@emotion/styled';
     case 'emotion-styled-v11':
+    case 'emotion-styled-v11-without-plugin':
       return '@emotion-v11/styled';
     case 'emotion-vanilla':
+    case 'emotion-vanilla-without-plugin':
       return 'emotion';
     case 'emotion-vanilla-v11':
+    case 'emotion-vanilla-v11-without-plugin':
       return '@emotion-v11/css';
+    case 'styled-components-without-plugin':
+      return 'styled-components';
     default:
       return name;
   }
