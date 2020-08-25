@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
+    "@emotion/react": "^11.0.0-next.15",
     "aphrodite": "^2.4.0",
     "classnames": "^2.2.6",
     "d3-scale-chromatic": "^2.0.0",

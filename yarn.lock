@@ -1324,6 +1324,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/cache@npm:^11.0.0-next.15":
+  version: 11.0.0-next.15
+  resolution: "@emotion/cache@npm:11.0.0-next.15"
+  dependencies:
+    "@emotion/sheet": 1.0.0-next.3
+    "@emotion/utils": 1.0.0-next.0
+    "@emotion/weak-memoize": 0.2.5
+    stylis: ^4.0.2
+  checksum: 6daf8d79ab38ecaf3f1d5c457d6e2cea4cda0367e3dea63aeaf4f450877d4a38d4032e4bb7a1f2858c9ba2641a1e21aed82e1c5b9825301e8c0ae1c08ded4be7
+  languageName: node
+  linkType: hard
+
 "@emotion/core@npm:^10.0.35":
   version: 10.0.35
   resolution: "@emotion/core@npm:10.0.35"
@@ -1390,6 +1402,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/react@npm:^11.0.0-next.15":
+  version: 11.0.0-next.15
+  resolution: "@emotion/react@npm:11.0.0-next.15"
+  dependencies:
+    "@babel/runtime": ^7.7.2
+    "@emotion/cache": ^11.0.0-next.15
+    "@emotion/serialize": ^1.0.0-next.3
+    "@emotion/sheet": 1.0.0-next.3
+    "@emotion/utils": 1.0.0-next.0
+    "@emotion/weak-memoize": 0.2.5
+    hoist-non-react-statics: ^3.3.1
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@types/react": "*"
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 3fec0e011b521ebdab947aee38062281ae2559d5f971aac737a25aba6b1db9ef53826e8d5cfb27df8246e00939b464e7669366e453d72cd9d681f37f5577fc5f
+  languageName: node
+  linkType: hard
+
 "@emotion/serialize@npm:^0.11.15, @emotion/serialize@npm:^0.11.16":
   version: 0.11.16
   resolution: "@emotion/serialize@npm:0.11.16"
@@ -1403,10 +1439,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/serialize@npm:^1.0.0-next.3":
+  version: 1.0.0-next.3
+  resolution: "@emotion/serialize@npm:1.0.0-next.3"
+  dependencies:
+    "@emotion/hash": 0.8.0
+    "@emotion/memoize": 0.7.4
+    "@emotion/unitless": 0.7.5
+    "@emotion/utils": 1.0.0-next.0
+    csstype: ^3.0.2
+  checksum: 273ec5826acbfcb3c38f735f17223be5d27f2db76f584bdadca437dfed7fd666a2ff9c6aec4913552e2ae51e971a5b8c2809296366a344d11f6ab18538349a23
+  languageName: node
+  linkType: hard
+
 "@emotion/sheet@npm:0.9.4":
   version: 0.9.4
   resolution: "@emotion/sheet@npm:0.9.4"
   checksum: 48baa183e56d78df56ad474d833476fc26c0d563e931a82245e38975fe47ed338155d73dd5769c675aa821feef2e0480f4285c0584fc5271026f276316a299c1
+  languageName: node
+  linkType: hard
+
+"@emotion/sheet@npm:1.0.0-next.3":
+  version: 1.0.0-next.3
+  resolution: "@emotion/sheet@npm:1.0.0-next.3"
+  checksum: 15a7c6ee12a58e00b6fdaf4fd5e55a55748913425e6bfa8459adba0203914d1f2b72d12432ede386ca7787cd3483d9c69117fc7cfaed6402beff60d7c3480d57
   languageName: node
   linkType: hard
 
@@ -1428,6 +1484,13 @@ __metadata:
   version: 0.11.3
   resolution: "@emotion/utils@npm:0.11.3"
   checksum: b5c3a22204a878eafa8deb362493b48c3f3a7f7ec3e5a18634d14aa8d5c9d8274db0a9d0206b3c124fa170640880fbcda987971699a1cf69355f2cec994da487
+  languageName: node
+  linkType: hard
+
+"@emotion/utils@npm:1.0.0-next.0":
+  version: 1.0.0-next.0
+  resolution: "@emotion/utils@npm:1.0.0-next.0"
+  checksum: 06aba2c591d1cb7bb503590d48aceebca22a4fd5c994961fdadb66d38f40a946cd1576461bca5b3e6353bdcadd7d76ea2cb0097c003d408129d6d512ed1727d2
   languageName: node
   linkType: hard
 
@@ -3705,7 +3768,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"hoist-non-react-statics@npm:^3.0.0, hoist-non-react-statics@npm:^3.2.0, hoist-non-react-statics@npm:^3.3.0":
+"hoist-non-react-statics@npm:^3.0.0, hoist-non-react-statics@npm:^3.2.0, hoist-non-react-statics@npm:^3.3.0, hoist-non-react-statics@npm:^3.3.1":
   version: 3.3.2
   resolution: "hoist-non-react-statics@npm:3.3.2"
   dependencies:
@@ -5832,6 +5895,7 @@ fsevents@^1.2.7:
     "@babel/preset-flow": ^7.10.4
     "@babel/preset-react": ^7.10.4
     "@emotion/core": ^10.0.35
+    "@emotion/react": ^11.0.0-next.15
     aphrodite: ^2.4.0
     babel-loader: ^8.1.0
     babel-plugin-add-module-exports: ^1.0.2
@@ -6365,6 +6429,13 @@ fsevents@^1.2.7:
   version: 3.5.4
   resolution: "stylis@npm:3.5.4"
   checksum: 356e2352b1800595c46f3969c6afdce82ab3e5d668bbb6733e68a4968fa2190208cccd74129b7456e80ade3d321beeaff7c2c69ab90288127221062f90dcff99
+  languageName: node
+  linkType: hard
+
+"stylis@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "stylis@npm:4.0.2"
+  checksum: 68953195f6dc81284876ebe4f54da99556a2173fdded2f30d3b2c9bc0aad9b998fd723d913d4aa38f56e296dc5b2a7e17e14dd54777aef669c14137dc3d0b042
   languageName: node
   linkType: hard
 
