@@ -7,7 +7,7 @@ yarn
 yarn build
 
 # Benchmark
-open dist/index.html
+open index.html
 
 # Bundle size analysis
 open dist/report.html
