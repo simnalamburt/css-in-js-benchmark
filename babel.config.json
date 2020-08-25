@@ -42,7 +42,6 @@
       {
         "loose": true
       }
-    ],
-    "styled-jsx/babel"
+    ]
   ]
 }
