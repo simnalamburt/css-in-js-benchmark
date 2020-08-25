@@ -1,7 +1,6 @@
 CSS-in-JS benchmark
 ========
-Benchmarks of vairous CSS-in-JS libraries. THis project is fork of
-[react-native-web].
+Benchmarks of vairous CSS-in-JS libraries. **[Try it now!]**
 
 ```bash
 yarn
@@ -14,7 +13,9 @@ open index.html
 open dist/report.html
 ```
 
-![Sample image](https://raw.githubusercontent.com/simnalamburt/i/master/css-in-js-benchmark/sample.png)
+![Sample image]
+
+This project is fork of [react-native-web].
 
 &nbsp;
 
@@ -52,6 +53,8 @@ included.
 [Apache License (Version 2.0)] and the [MIT license]. See [COPYRIGHT] for
 details.
 
+[Try it now!]: https://simnalamburt.github.io/css-in-js-benchmark/
+[Sample image]: https://raw.githubusercontent.com/simnalamburt/i/master/css-in-js-benchmark/sample.png
 [react-native-web]: https://github.com/necolas/react-native-web
 
 [MIT license]: LICENSE-MIT
