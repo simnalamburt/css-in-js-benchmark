@@ -1,15 +1,17 @@
 import React from 'react';
 import View from './View';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View
     {...other}
-    style={[
-      styles[`color${color}`],
-      fixed && styles.fixed,
-      layout === 'row' && styles.row,
-      outer && styles.outer
-    ]}
+    css={{
+      ...styles[`color${color}`],
+      ...(fixed && styles.fixed),
+      ...(layout === 'row' && styles.row),
+      ...(outer && styles.outer),
+    }}
   />
 );
 

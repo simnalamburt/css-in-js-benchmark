@@ -3,10 +3,10 @@
     "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
     "aphrodite": "^2.4.0",
     "classnames": "^2.2.6",
     "d3-scale-chromatic": "^1.5.0",
-    "emotion": "^10.0.27",
     "fbjs": "^2.0.0",
     "fela": "^11.0.2",
     "prop-types": "^15.7.2",

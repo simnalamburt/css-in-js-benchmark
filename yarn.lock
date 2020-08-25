@@ -1253,7 +1253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4":
   version: 7.11.2
   resolution: "@babel/runtime@npm:7.11.2"
   dependencies:
@@ -1321,6 +1321,33 @@ __metadata:
     "@emotion/utils": 0.11.3
     "@emotion/weak-memoize": 0.2.5
   checksum: a2bdf4dd21b63d5e88999bfefe841e5a7c64783d321f94bb930d28d18e8d15c80997c84a21996856d9356ef36d70e1ea1209f23de0c2f9e65c8b86e7d3a2f192
+  languageName: node
+  linkType: hard
+
+"@emotion/core@npm:^10.0.35":
+  version: 10.0.35
+  resolution: "@emotion/core@npm:10.0.35"
+  dependencies:
+    "@babel/runtime": ^7.5.5
+    "@emotion/cache": ^10.0.27
+    "@emotion/css": ^10.0.27
+    "@emotion/serialize": ^0.11.15
+    "@emotion/sheet": 0.9.4
+    "@emotion/utils": 0.11.3
+  peerDependencies:
+    react: ">=16.3.0"
+  checksum: c47657ac54efba4fca7595cef950164594873345db70abda2a6066e2889aad5f088c7f14ce29a15c4c787494eb3e143c331bf875d849ca9ed7caeda307a8aad9
+  languageName: node
+  linkType: hard
+
+"@emotion/css@npm:^10.0.27":
+  version: 10.0.27
+  resolution: "@emotion/css@npm:10.0.27"
+  dependencies:
+    "@emotion/serialize": ^0.11.15
+    "@emotion/utils": 0.11.3
+    babel-plugin-emotion: ^10.0.27
+  checksum: 6c8246c63bcb83a1b77fe174c831255f1ba9dc6e040a529ac95e379c272a94b8fd3d207cc4b8e47982928d52a74b80e7389a0a1977c65105731f92bed814f6b7
   languageName: node
   linkType: hard
 
@@ -2504,18 +2531,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-emotion@npm:^10.0.27":
-  version: 10.0.27
-  resolution: "create-emotion@npm:10.0.27"
-  dependencies:
-    "@emotion/cache": ^10.0.27
-    "@emotion/serialize": ^0.11.15
-    "@emotion/sheet": 0.9.4
-    "@emotion/utils": 0.11.3
-  checksum: 59581a54fe4f6da6bcbae502df852f0cf0dc6f002aaf416701266a4d944e63d9e33ac0d733b35d8a6265f4052dfdba67222ae341e8f9382afb2e40ed03831053
-  languageName: node
-  linkType: hard
-
 "create-react-class@npm:^15.6.2":
   version: 15.6.3
   resolution: "create-react-class@npm:15.6.3"
@@ -2869,16 +2884,6 @@ __metadata:
   version: 3.0.0
   resolution: "emojis-list@npm:3.0.0"
   checksum: a79126b55bc86ee8fd938235a6adf9d457c05fb5bb934e8608b7d35c878d9d1e312a67759244f5c3fba0810b508eb5617e5e6ad6886496ebcfa6832d1c8de3c4
-  languageName: node
-  linkType: hard
-
-"emotion@npm:^10.0.27":
-  version: 10.0.27
-  resolution: "emotion@npm:10.0.27"
-  dependencies:
-    babel-plugin-emotion: ^10.0.27
-    create-emotion: ^10.0.27
-  checksum: cc542b2df96732b0c60683a60c94e42d226ac37854c73d33c6e32f596dce52261a4c07a841edf621f44166a4b5a146e4cb18d294ae6759a5522f80e2dba5cd44
   languageName: node
   linkType: hard
 
@@ -5802,6 +5807,7 @@ fsevents@^1.2.7:
     "@babel/preset-env": ^7.8.4
     "@babel/preset-flow": ^7.8.3
     "@babel/preset-react": ^7.8.3
+    "@emotion/core": ^10.0.35
     aphrodite: ^2.4.0
     babel-loader: ^8.0.6
     babel-plugin-add-module-exports: ^1.0.2
@@ -5810,7 +5816,6 @@ fsevents@^1.2.7:
     classnames: ^2.2.6
     css-loader: ^3.4.2
     d3-scale-chromatic: ^1.5.0
-    emotion: ^10.0.27
     fbjs: ^2.0.0
     fela: ^11.0.2
     prop-types: ^15.7.2
