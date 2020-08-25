@@ -3370,12 +3370,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:^0.109.0":
-  version: 0.109.0
-  resolution: "flow-bin@npm:0.109.0"
+"flow-bin@npm:^0.132.0":
+  version: 0.132.0
+  resolution: "flow-bin@npm:0.132.0"
   bin:
     flow: cli.js
-  checksum: 6e13fdc0554efc44f6e7809c9a28e5167f358a058b4c34aee4293219967893e91fafa06892b76a2dec642e86613745c506e1752fb07129b19175e941896357f0
+  checksum: ecaa7ff45608831e4a7634d3232dcb4114733036a58a4cc41403b37cfa073af55d8b7cedc11c308c41527c0728440d35628a62c2dc05d27a2d3f3d4d134132c6
   languageName: node
   linkType: hard
 
@@ -5836,7 +5836,7 @@ fsevents@^1.2.7:
     d3-scale-chromatic: ^1.5.0
     fbjs: ^2.0.0
     fela: ^11.0.2
-    flow-bin: ^0.109.0
+    flow-bin: ^0.132.0
     prettier: ^2.1.0
     prop-types: ^15.7.2
     react: ^16.13.1
