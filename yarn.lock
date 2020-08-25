@@ -202,7 +202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.0.0, @babel/helper-module-imports@npm:^7.10.4":
+"@babel/helper-module-imports@npm:^7.0.0, @babel/helper-module-imports@npm:^7.10.4, @babel/helper-module-imports@npm:^7.7.0":
   version: 7.10.4
   resolution: "@babel/helper-module-imports@npm:7.10.4"
   dependencies:
@@ -578,7 +578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:^7.10.4":
+"@babel/plugin-syntax-jsx@npm:^7.10.4, @babel/plugin-syntax-jsx@npm:^7.2.0":
   version: 7.10.4
   resolution: "@babel/plugin-syntax-jsx@npm:7.10.4"
   dependencies:
@@ -1312,6 +1312,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/babel-plugin@npm:^11.0.0-next.15":
+  version: 11.0.0-next.15
+  resolution: "@emotion/babel-plugin@npm:11.0.0-next.15"
+  dependencies:
+    "@babel/helper-module-imports": ^7.7.0
+    "@babel/plugin-syntax-jsx": ^7.2.0
+    "@babel/runtime": ^7.7.2
+    "@emotion/hash": 0.8.0
+    "@emotion/memoize": 0.7.4
+    "@emotion/serialize": ^1.0.0-next.3
+    babel-plugin-macros: ^2.6.1
+    convert-source-map: ^1.5.0
+    escape-string-regexp: ^1.0.5
+    find-root: ^1.1.0
+    source-map: ^0.5.7
+    stylis: ^4.0.2
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 91c46a95c1714f26ee99fb918bd523b9c18203acfd8d41ae22ff45c21beabf0e7d87adf20827ae6fa7f806ac2ffa0a129ace6ad85db0e1d479c6db8d11967d8c
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^10.0.27":
   version: 10.0.29
   resolution: "@emotion/cache@npm:10.0.29"
@@ -1910,7 +1932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-emotion@npm:^10.0.27":
+"babel-plugin-emotion@npm:^10.0.27, babel-plugin-emotion@npm:^10.0.33":
   version: 10.0.33
   resolution: "babel-plugin-emotion@npm:10.0.33"
   dependencies:
@@ -1928,7 +1950,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:^2.0.0":
+"babel-plugin-macros@npm:^2.0.0, babel-plugin-macros@npm:^2.6.1":
   version: 2.8.0
   resolution: "babel-plugin-macros@npm:2.8.0"
   dependencies:
@@ -1946,7 +1968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-styled-components@npm:>= 1":
+"babel-plugin-styled-components@npm:>= 1, babel-plugin-styled-components@npm:^1.11.1":
   version: 1.11.1
   resolution: "babel-plugin-styled-components@npm:1.11.1"
   dependencies:
@@ -4862,11 +4884,15 @@ __metadata:
     "@babel/preset-env": ^7.11.0
     "@babel/preset-flow": ^7.10.4
     "@babel/preset-react": ^7.10.4
+    "@emotion/babel-plugin": ^11.0.0-next.15
     "@emotion/core": ^10.0.35
+    "@emotion/css": ^10.0.27
     "@emotion/react": ^11.0.0-next.15
     aphrodite: ^2.4.0
     babel-loader: ^8.1.0
+    babel-plugin-emotion: ^10.0.33
     babel-plugin-react-native-web: 0.13.8
+    babel-plugin-styled-components: ^1.11.1
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     classnames: ^2.2.6
     css-loader: ^4.2.2
