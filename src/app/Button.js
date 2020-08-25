@@ -1,37 +1,26 @@
 import { StyleSheet, TouchableHighlight, Text } from 'react-native-web';
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Button extends Component<*> {
-  render() {
-    const {
-      accessibilityLabel,
-      color,
-      disabled,
-      onPress,
-      style,
-      textStyle,
-      testID,
-      title
-    } = this.props;
+export default function Button(props) {
+  const { accessibilityLabel, color, disabled, onPress, style, textStyle, testID, title } = props;
 
-    return (
-      <TouchableHighlight
-        accessibilityLabel={accessibilityLabel}
-        accessibilityRole="button"
-        disabled={disabled}
-        onPress={onPress}
-        style={[
-          styles.button,
-          style,
-          color && { backgroundColor: color },
-          disabled && styles.buttonDisabled
-        ]}
-        testID={testID}
-      >
-        <Text style={[styles.text, textStyle, disabled && styles.textDisabled]}>{title}</Text>
-      </TouchableHighlight>
-    );
-  }
+  return (
+    <TouchableHighlight
+      accessibilityLabel={accessibilityLabel}
+      accessibilityRole="button"
+      disabled={disabled}
+      onPress={onPress}
+      style={[
+        styles.button,
+        style,
+        color && { backgroundColor: color },
+        disabled && styles.buttonDisabled
+      ]}
+      testID={testID}
+    >
+      <Text style={[styles.text, textStyle, disabled && styles.textDisabled]}>{title}</Text>
+    </TouchableHighlight>
+  );
 }
 
 const styles = StyleSheet.create({

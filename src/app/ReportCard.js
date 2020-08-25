@@ -9,48 +9,46 @@ const fmt = (time: number) => {
   return 10 / i > 1 ? `0${i}` : i;
 };
 
-class ReportCard extends React.PureComponent {
-  render() {
-    const {
-      benchmarkName,
-      libraryName,
-      sampleCount,
-      mean,
-      meanLayout,
-      meanScripting,
-      stdDev,
-      libraryVersion
-    } = this.props;
+export default function ReportCard(props) {
+  const {
+    benchmarkName,
+    libraryName,
+    sampleCount,
+    mean,
+    meanLayout,
+    meanScripting,
+    stdDev,
+    libraryVersion
+  } = props;
 
-    const sampleCountText = sampleCount != null ? `(${sampleCount})` : '';
+  const sampleCountText = sampleCount != null ? `(${sampleCount})` : '';
 
-    return (
-      <View style={styles.root}>
-        <View style={styles.left}>
-          <Text numberOfLines={1} style={styles.bold}>
-            {`${libraryName} ${libraryVersion ?? ''}`}
-          </Text>
-          <Text numberOfLines={1}>
-            {benchmarkName} {sampleCountText}
-          </Text>
-        </View>
-        <View style={styles.right}>
-          {mean ? (
-            <Fragment>
-              <Text style={[styles.bold, styles.monoFont]}>
-                {fmt(mean)} ±{fmt(stdDev)} ms
-              </Text>
-              <Text style={[styles.smallText, styles.monoFont]}>
-                (S/L) {fmt(meanScripting)}/{fmt(meanLayout)} ms
-              </Text>
-            </Fragment>
-          ) : (
-            <Text style={styles.bold}>In progress…</Text>
-          )}
-        </View>
+  return (
+    <View style={styles.root}>
+      <View style={styles.left}>
+        <Text numberOfLines={1} style={styles.bold}>
+          {`${libraryName} ${libraryVersion ?? ''}`}
+        </Text>
+        <Text numberOfLines={1}>
+          {benchmarkName} {sampleCountText}
+        </Text>
       </View>
-    );
-  }
+      <View style={styles.right}>
+        {mean ? (
+          <Fragment>
+            <Text style={[styles.bold, styles.monoFont]}>
+              {fmt(mean)} ±{fmt(stdDev)} ms
+            </Text>
+            <Text style={[styles.smallText, styles.monoFont]}>
+              (S/L) {fmt(meanScripting)}/{fmt(meanLayout)} ms
+            </Text>
+          </Fragment>
+        ) : (
+          <Text style={styles.bold}>In progress…</Text>
+        )}
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -80,5 +78,3 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end'
   }
 });
-
-export default ReportCard;
