@@ -5,6 +5,10 @@ export default function TextTree(props) {
   const { breadth, components, depth, id, wrap } = props;
   const { TextBox } = components;
 
+  if (TextBox == null) {
+    return <span style={{ color: 'white' }}>No implementation available</span>;
+  }
+
   let result = (
     <TextBox color={id % 3} outer>
       {depth === 0 ? (
