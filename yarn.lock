@@ -25,7 +25,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.8.4":
+"@babel/core@npm:^7.11.4":
   version: 7.11.4
   resolution: "@babel/core@npm:7.11.4"
   dependencies:
@@ -366,7 +366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.10.4, @babel/plugin-proposal-class-properties@npm:^7.8.3":
+"@babel/plugin-proposal-class-properties@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/plugin-proposal-class-properties@npm:7.10.4"
   dependencies:
@@ -426,7 +426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.10.4, @babel/plugin-proposal-nullish-coalescing-operator@npm:^7.8.3":
+"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/plugin-proposal-nullish-coalescing-operator@npm:7.10.4"
   dependencies:
@@ -450,7 +450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-object-rest-spread@npm:^7.11.0, @babel/plugin-proposal-object-rest-spread@npm:^7.8.3":
+"@babel/plugin-proposal-object-rest-spread@npm:^7.11.0":
   version: 7.11.0
   resolution: "@babel/plugin-proposal-object-rest-spread@npm:7.11.0"
   dependencies:
@@ -1131,7 +1131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.8.4":
+"@babel/preset-env@npm:^7.11.0":
   version: 7.11.0
   resolution: "@babel/preset-env@npm:7.11.0"
   dependencies:
@@ -1209,7 +1209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-flow@npm:^7.8.3":
+"@babel/preset-flow@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/preset-flow@npm:7.10.4"
   dependencies:
@@ -1236,7 +1236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.8.3":
+"@babel/preset-react@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/preset-react@npm:7.10.4"
   dependencies:
@@ -1938,7 +1938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.0.6":
+"babel-loader@npm:^8.1.0":
   version: 8.1.0
   resolution: "babel-loader@npm:8.1.0"
   dependencies:
@@ -2004,10 +2004,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-native-web@npm:0.13.4":
-  version: 0.13.4
-  resolution: "babel-plugin-react-native-web@npm:0.13.4"
-  checksum: f9729123ce8c2ea407e17461cd1d945202adeb036563c03983f258d4cc368728c93bd2e0d5aab8e0f972bf8541a53fcf6d73a5cfb031603a3424f7782f02c507
+"babel-plugin-react-native-web@npm:0.13.8":
+  version: 0.13.8
+  resolution: "babel-plugin-react-native-web@npm:0.13.8"
+  checksum: 47a5753f47a0f269c60d400337a32670ba2f9cf237d484fc300175fb99bb5e85cd816b5d207ddfa02389dd0a365c52ce6db95abb0cce0c40148ac08ca6f80501
   languageName: node
   linkType: hard
 
@@ -3256,7 +3256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fela@npm:^11.0.2, fela@npm:^11.3.1":
+"fela@npm:^11.3.1":
   version: 11.3.1
   resolution: "fela@npm:11.3.1"
   dependencies:
@@ -5459,7 +5459,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-fela@npm:^11.0.2":
+"react-fela@npm:^11.3.1":
   version: 11.3.1
   resolution: "react-fela@npm:11.3.1"
   dependencies:
@@ -5479,7 +5479,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-jss@npm:^10.0.4":
+"react-jss@npm:^10.4.0":
   version: 10.4.0
   resolution: "react-jss@npm:10.4.0"
   dependencies:
@@ -5500,9 +5500,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-native-web@npm:0.13.4":
-  version: 0.13.4
-  resolution: "react-native-web@npm:0.13.4"
+"react-native-web@npm:0.13.8":
+  version: 0.13.8
+  resolution: "react-native-web@npm:0.13.8"
   dependencies:
     array-find-index: ^1.0.2
     create-react-class: ^15.6.2
@@ -5517,7 +5517,7 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ">=16.5.1"
     react-dom: ">=16.5.1"
-  checksum: 17f364955ff8697a9ce024ae415032a7df8a88459d8b8125ef33f19a30fbeedc4a08b71d00b2e7f8cbf28e7a9ab3c742f5d492be0290c35af831ec41d70213bb
+  checksum: 012db9a91a7445415af483569b5c245c51dd7e09c252832fb2f7634d7e6df19cad0fc854af9cf8f4f1dc95d4606c03c11b47077e7983ecc672fe26283be9e603
   languageName: node
   linkType: hard
 
@@ -5817,42 +5817,42 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@babel/core": ^7.8.4
-    "@babel/plugin-proposal-class-properties": ^7.8.3
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.8.3
-    "@babel/plugin-proposal-object-rest-spread": ^7.8.3
+    "@babel/core": ^7.11.4
+    "@babel/plugin-proposal-class-properties": ^7.10.4
+    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.10.4
+    "@babel/plugin-proposal-object-rest-spread": ^7.11.0
     "@babel/plugin-transform-flow-strip-types": ^7.10.4
-    "@babel/preset-env": ^7.8.4
-    "@babel/preset-flow": ^7.8.3
-    "@babel/preset-react": ^7.8.3
+    "@babel/preset-env": ^7.11.0
+    "@babel/preset-flow": ^7.10.4
+    "@babel/preset-react": ^7.10.4
     "@emotion/core": ^10.0.35
     aphrodite: ^2.4.0
-    babel-loader: ^8.0.6
+    babel-loader: ^8.1.0
     babel-plugin-add-module-exports: ^1.0.2
-    babel-plugin-react-native-web: 0.13.4
+    babel-plugin-react-native-web: 0.13.8
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     classnames: ^2.2.6
     css-loader: ^3.4.2
     d3-scale-chromatic: ^1.5.0
     fbjs: ^2.0.0
-    fela: ^11.0.2
+    fela: ^11.3.1
     flow-bin: ^0.132.0
     prettier: ^2.1.0
     prop-types: ^15.7.2
     react: ^16.13.1
     react-dom: ^16.13.1
-    react-fela: ^11.0.2
+    react-fela: ^11.3.1
     react-is: ^16.13.1
-    react-jss: ^10.0.4
-    react-native-web: 0.13.4
+    react-jss: ^10.4.0
+    react-native-web: 0.13.8
     reactxp: ^2.0.0
-    style-loader: ^1.1.3
-    styled-components: ^5.0.0
-    styled-jsx: ^3.2.4
-    styletron-engine-atomic: ^1.4.4
-    styletron-react: ^5.2.6
+    style-loader: ^1.2.1
+    styled-components: ^5.1.1
+    styled-jsx: ^3.3.0
+    styletron-engine-atomic: ^1.4.6
+    styletron-react: ^5.2.7
     webpack: ^5.0.0-beta.28
-    webpack-bundle-analyzer: ^3.6.0
+    webpack-bundle-analyzer: ^3.8.0
     webpack-cli: ^3.3.12
   languageName: unknown
   linkType: soft
@@ -6262,7 +6262,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"style-loader@npm:^1.1.3":
+"style-loader@npm:^1.2.1":
   version: 1.2.1
   resolution: "style-loader@npm:1.2.1"
   dependencies:
@@ -6274,7 +6274,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^5.0.0":
+"styled-components@npm:^5.1.1":
   version: 5.1.1
   resolution: "styled-components@npm:5.1.1"
   dependencies:
@@ -6296,7 +6296,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"styled-jsx@npm:^3.2.4":
+"styled-jsx@npm:^3.3.0":
   version: 3.3.0
   resolution: "styled-jsx@npm:3.3.0"
   dependencies:
@@ -6314,7 +6314,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"styletron-engine-atomic@npm:^1.4.4":
+"styletron-engine-atomic@npm:^1.4.6":
   version: 1.4.6
   resolution: "styletron-engine-atomic@npm:1.4.6"
   dependencies:
@@ -6324,7 +6324,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"styletron-react@npm:^5.2.6":
+"styletron-react@npm:^5.2.7":
   version: 5.2.7
   resolution: "styletron-react@npm:5.2.7"
   dependencies:
@@ -6759,7 +6759,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^3.6.0":
+"webpack-bundle-analyzer@npm:^3.8.0":
   version: 3.8.0
   resolution: "webpack-bundle-analyzer@npm:3.8.0"
   dependencies:
