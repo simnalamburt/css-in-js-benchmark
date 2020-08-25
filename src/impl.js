@@ -25,7 +25,13 @@ const toImplementations = (context: Object): Array<ImplementationType> =>
     const components = context(path).default;
     const name = path.split('/')[1];
     const packageName =
-      name === 'emotion' ? '@emotion/core' : name === 'emotion-v11' ? '@emotion/react' : name;
+      name === 'emotion'
+        ? '@emotion/core'
+        : name === 'emotion-v11'
+        ? '@emotion/react'
+        : name === 'emotion-vanilla'
+        ? 'emotion'
+        : name;
     const version = dependencies[packageName] || '';
     return { components, name, version };
   });
