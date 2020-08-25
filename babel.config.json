@@ -5,9 +5,7 @@
       {
         "loose": true,
         "modules": false,
-        "exclude": [
-          "transform-typeof-symbol"
-        ],
+        "exclude": ["transform-typeof-symbol"],
         "targets": {
           "browsers": [
             "chrome 38",

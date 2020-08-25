@@ -1,5 +1,3 @@
 {
-  "plugins": [
-    "react-native-web"
-  ]
+  "plugins": ["react-native-web"]
 }
