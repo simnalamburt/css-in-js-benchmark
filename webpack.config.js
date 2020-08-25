@@ -10,5 +10,10 @@ module.exports = {
         use: 'babel-loader'
       }
     ]
+  },
+  performance: {
+    // This benchmark uses lots of libraries
+    maxEntrypointSize: 800000,
+    maxAssetSize: 800000
   }
 };
