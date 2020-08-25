@@ -20,18 +20,30 @@ type ImplementationType = {
   version: string
 };
 
+function packageFromDirname(name) {
+  switch (name) {
+    case 'emotion-css':
+      return '@emotion/core';
+    case 'emotion-css-v11':
+      return '@emotion/react';
+    case 'emotion-styled':
+      return '@emotion/styled';
+    case 'emotion-styled-v11':
+      return '@emotion-v11/styled';
+    case 'emotion-vanilla':
+      return 'emotion';
+    case 'emotion-vanilla-v11':
+      return '@emotion-v11/css';
+    default:
+      return name;
+  }
+}
+
 const toImplementations = (context: Object): Array<ImplementationType> =>
   context.keys().map(path => {
     const components = context(path).default;
     const name = path.split('/')[1];
-    const packageName =
-      name === 'emotion'
-        ? '@emotion/core'
-        : name === 'emotion-v11'
-        ? '@emotion/react'
-        : name === 'emotion-vanilla'
-        ? 'emotion'
-        : name;
+    const packageName = packageFromDirname(name);
     const version = dependencies[packageName] || '';
     return { components, name, version };
   });
