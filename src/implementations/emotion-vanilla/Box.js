@@ -1,48 +1,46 @@
 import React from 'react';
 import View from './View';
+import { css } from 'emotion';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View
     {...other}
-    style={[
-      styles[`color${color}`],
-      fixed && styles.fixed,
-      layout === 'row' && styles.row,
-      outer && styles.outer
-    ]}
+    className={`${styles[`color${color}`] ?? ''} ${fixed ? styles.fixed : ''} ${
+      layout === 'row' ? styles.row : ''
+    } ${outer ? styles.outer : ''}`}
   />
 );
 
 const styles = {
-  outer: {
-    alignSelf: 'flex-start',
-    padding: 4
-  },
-  row: {
-    flexDirection: 'row'
-  },
-  color0: {
-    backgroundColor: '#14171A'
-  },
-  color1: {
-    backgroundColor: '#AAB8C2'
-  },
-  color2: {
-    backgroundColor: '#E6ECF0'
-  },
-  color3: {
-    backgroundColor: '#FFAD1F'
-  },
-  color4: {
-    backgroundColor: '#F45D22'
-  },
-  color5: {
-    backgroundColor: '#E0245E'
-  },
-  fixed: {
-    width: 6,
-    height: 6
-  }
+  outer: css`
+    align-self: flex-start;
+    padding: 4px;
+  `,
+  row: css`
+    flex-direction: row;
+  `,
+  color0: css`
+    background-color: #14171a;
+  `,
+  color1: css`
+    background-color: #aab8c2;
+  `,
+  color2: css`
+    background-color: #e6ecf0;
+  `,
+  color3: css`
+    background-color: #ffad1f;
+  `,
+  color4: css`
+    background-color: #f45d22;
+  `,
+  color5: css`
+    background-color: #e0245e;
+  `,
+  fixed: css`
+    width: 6px;
+    height: 6px;
+  `
 };
 
 export default Box;

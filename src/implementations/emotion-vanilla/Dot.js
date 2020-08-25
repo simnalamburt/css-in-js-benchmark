@@ -3,30 +3,25 @@ import { css } from 'emotion';
 
 const Dot = ({ size, x, y, children, color }) => (
   <div
-    className={css(styles.root, {
-      borderBottomColor: color,
-      borderRightWidth: `${size / 2}px`,
-      borderBottomWidth: `${size / 2}px`,
-      borderLeftWidth: `${size / 2}px`,
-      marginLeft: `${x}px`,
-      marginTop: `${y}px`
-    })}
+    className={css`
+      position: absolute;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-top-width: 0;
+      transform: translate(50%, 50%);
+      border-bottom-color: ${color};
+      border-right-width: ${size / 2}px;
+      border-bottom-width: ${size / 2}px;
+      border-left-width: ${size / 2}px;
+      margin-left: ${x}px;
+      margin-top: ${y}px;
+    `}
   >
     {children}
   </div>
 );
-
-const styles = {
-  root: {
-    position: 'absolute',
-    cursor: 'pointer',
-    width: 0,
-    height: 0,
-    borderColor: 'transparent',
-    borderStyle: 'solid',
-    borderTopWidth: 0,
-    transform: 'translate(50%, 50%)'
-  }
-};
 
 export default Dot;
