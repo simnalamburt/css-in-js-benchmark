@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native-web';
+import { StyleSheet, Text } from 'react-native';
 
 const TextBox = ({ color, outer = false, ...other }) => (
   <Text {...other} style={[styles.root, styles[`color${color}`], outer && styles.outer]} />

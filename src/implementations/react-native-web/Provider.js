@@ -1,2 +1,2 @@
-import { View } from 'react-native-web';
+import { View } from 'react-native';
 export default View;
