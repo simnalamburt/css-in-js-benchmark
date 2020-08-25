@@ -5303,6 +5303,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"prettier@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "prettier@npm:2.1.0"
+  bin:
+    prettier: bin-prettier.js
+  checksum: f955d380d2892284c28bbfe32b1601cfcd7a24d8b310832937773b9e733f624e38ff70cbafee80e9553bdb3c55783d019163667bf9a69df4e6f7c2acdcf54c06
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -5818,6 +5827,7 @@ fsevents@^1.2.7:
     d3-scale-chromatic: ^1.5.0
     fbjs: ^2.0.0
     fela: ^11.0.2
+    prettier: ^2.1.0
     prop-types: ^15.7.2
     react: ^16.13.1
     react-dom: ^16.13.1
