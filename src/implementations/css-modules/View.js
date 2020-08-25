@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import styles from './view-styles.css';
+import styles from './view-styles.module.css';
 
 class View extends React.Component {
   render() {
