@@ -48,6 +48,12 @@ included.
 
 &nbsp;
 
+## See Also
+- https://github.com/jantimon/css-framework-performance
+- https://github.com/A-gambit/CSS-IN-JS-Benchmarks
+
+&nbsp;
+
 --------
 *css-in-js-benchmark* is primarily distributed under the terms of both the
 [Apache License (Version 2.0)] and the [MIT license]. See [COPYRIGHT] for
