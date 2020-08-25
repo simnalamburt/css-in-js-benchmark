@@ -10,7 +10,7 @@ const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other 
       ...styles[`color${color}`],
       ...(fixed && styles.fixed),
       ...(layout === 'row' && styles.row),
-      ...(outer && styles.outer),
+      ...(outer && styles.outer)
     }}
   />
 );

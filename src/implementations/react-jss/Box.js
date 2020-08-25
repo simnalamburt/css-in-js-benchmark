@@ -3,7 +3,7 @@ import React from 'react';
 import View from './View';
 
 const useStyles = createUseStyles(theme => ({
-  root: (props) => ({
+  root: props => ({
     ...(props.outer && {
       alignSelf: 'flex-start',
       padding: 4
@@ -32,17 +32,14 @@ const useStyles = createUseStyles(theme => ({
     ...(props.fixed && {
       width: 6,
       height: 6
-    }),
+    })
   })
 }));
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => {
   const classes = useStyles({ color, fixed, layout, outer, ...other });
 
-  return <View
-    {...other}
-    className={classes.root}
-  />
+  return <View {...other} className={classes.root} />;
 };
 
 export default Box;
