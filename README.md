@@ -13,8 +13,10 @@ open index.html
 open dist/report.html
 ```
 
+#### Firefox benchmark
 ![Firefox benchmark result]
 
+#### Chromium benchmark
 ![Chromium benchmark result]
 
 This project is fork of [react-native-web].
