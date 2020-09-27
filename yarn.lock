@@ -3653,44 +3653,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fela-bindings@npm:^11.3.1":
-  version: 11.3.1
-  resolution: "fela-bindings@npm:11.3.1"
+"fela-bindings@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "fela-bindings@npm:11.3.3"
   dependencies:
     fast-loops: ^1.0.0
-    fela-dom: ^11.3.1
-    fela-tools: ^11.3.1
+    fela-dom: ^11.3.3
+    fela-tools: ^11.3.3
     react-addons-shallow-compare: ^15.6.2
     shallow-equal: ^1.0.0
   peerDependencies:
     fela: "*"
-  checksum: d33134630df2b7c7602511cd2b2dd5ae6d0a0338ca6646aa11217acd6750641111613e773e19387c03f6caf03cbeaa7c714ae26011ba658570624e6923618620
+  checksum: 326d2eb2ab327d9e6c69a3ed4baa36b1eeb017fa297ad448ed3da137310ef724c04945d40615362e95774844f4d7fb563a6733e8763138935afca0c9c2ef24d3
   languageName: node
   linkType: hard
 
-"fela-dom@npm:^11.3.1":
-  version: 11.3.1
-  resolution: "fela-dom@npm:11.3.1"
+"fela-dom@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "fela-dom@npm:11.3.3"
   dependencies:
     css-in-js-utils: ^3.0.0
     fast-loops: ^1.0.1
-    fela-utils: ^11.3.1
+    fela-utils: ^11.3.3
     sort-css-media-queries: ^1.4.3
-  checksum: 500b2324dbe230533ad4cdda231beafbb4b276a84144a32c1fbcb8006d4da507c96f40a1a2079cb9f6ca7d9f57e8e4daa6a5c15dd5c4173e10bbd9b567499c21
+  checksum: 3a8af09cd7e113078a5b02bc60b34dfeafe0f0508e18bfbfcccc5b0d4f84a9774fc1a1b0f25d24f2723c18f3a1fc68fe89be0477c6c04e82d15179bc4baf29b5
   languageName: node
   linkType: hard
 
-"fela-tools@npm:^11.3.1":
-  version: 11.3.1
-  resolution: "fela-tools@npm:11.3.1"
+"fela-tools@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "fela-tools@npm:11.3.3"
   dependencies:
     css-in-js-utils: ^3.0.0
     fast-loops: ^1.0.0
-    fela: ^11.3.1
-    fela-utils: ^11.3.1
+    fela: ^11.3.3
+    fela-utils: ^11.3.3
   peerDependencies:
     fela: ^11.2.0
-  checksum: 365fa759a4d3d705588a68f43a9ab562e4e9e6710a6ffbeeba97e7a1a32084e4c38b86e6c5b635107142df10f3b8a2ae98971c17244dfbf0a2de71f4aa1a7d38
+  checksum: b27de1a2a9ca077c2b6e9350030decf3358a7d8910593d34c4b8915b5e22b27a4233a32b5f181e2692033f2fcac32f92271224aba37828b2bc29f39e8b0bcad7
   languageName: node
   linkType: hard
 
@@ -3704,6 +3704,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fela-utils@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "fela-utils@npm:11.3.3"
+  dependencies:
+    css-in-js-utils: ^3.0.0
+    fast-loops: ^1.0.0
+  checksum: c758c3479203bae8fb8687f32eb2a81c59d7a7dbbce21671f22fac6901a9f8974e5ba41c0045cafa718c1ed598ac24c5d2fd16e574c3eff7e37cc123662b0ff0
+  languageName: node
+  linkType: hard
+
 "fela@npm:^11.3.1":
   version: 11.3.1
   resolution: "fela@npm:11.3.1"
@@ -3714,6 +3724,19 @@ __metadata:
     fela-utils: ^11.3.1
     isobject: ^3.0.1
   checksum: faeedac855274f7112fdab98fc57762c71968cabd1bb8d396a98b725a48940c0bee7f5f8f9e208ba050c65253b4e7e5ce7b81093c5a3f3c621923d6123842dc5
+  languageName: node
+  linkType: hard
+
+"fela@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "fela@npm:11.3.3"
+  dependencies:
+    css-in-js-utils: ^3.0.0
+    csstype: ^2.5.5
+    fast-loops: ^1.0.0
+    fela-utils: ^11.3.3
+    isobject: ^3.0.1
+  checksum: 921d0f8a778ed619bbcb946cfebff076e209ed7872d672335b35cfc3a4db4e0cf2e2b630f273e58dd0b29e9bac57b7c4c07014bf332212d9e85fc549d025e211
   languageName: node
   linkType: hard
 
@@ -6308,16 +6331,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-fela@npm:^11.3.1":
-  version: 11.3.1
-  resolution: "react-fela@npm:11.3.1"
+"react-fela@npm:^11.3.3":
+  version: 11.3.3
+  resolution: "react-fela@npm:11.3.3"
   dependencies:
-    fela-bindings: ^11.3.1
-    fela-dom: ^11.3.1
+    fela-bindings: ^11.3.3
+    fela-dom: ^11.3.3
     prop-types: ^15.5.8
   peerDependencies:
+    fela: ^11.3.1
     react: ^16.3.0
-  checksum: ca35fa532a237e4ed66b9d2819f3828ba1b6f3300378eb72f5dcc4b9a061983eb60904def512f70c56a81cbbdb85b95a52e95b86c2beddca6b8d39fb5bcdf57a
+  checksum: c3784600f0d3122a9aa59f5d5018a3e21576fbffc292848b89a94dbae0494540b9c5e902bc99e32f3c4b6f8bc658b93625332c6f3aa0f7c577dfa4bd14a42293
   languageName: node
   linkType: hard
 
@@ -6732,7 +6756,7 @@ fsevents@^1.2.7:
     prop-types: ^15.7.2
     react: ^16.13.1
     react-dom: ^16.13.1
-    react-fela: ^11.3.1
+    react-fela: ^11.3.3
     react-is: ^16.13.1
     react-jss: ^10.4.0
     react-native-web: 0.13.8
