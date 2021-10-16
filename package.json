@@ -6,11 +6,11 @@
     "fmt": "prettier --write ."
   },
   "dependencies": {
-    "@emotion-v11/css": "npm:@emotion/css@^11.0.0-next.15",
-    "@emotion-v11/styled": "npm:@emotion/styled@^11.0.0-next.15",
+    "@emotion-v11/css": "npm:@emotion/css@^11.0.0",
+    "@emotion-v11/styled": "npm:@emotion/styled@^11.0.0",
     "@emotion/core": "^10.0.35",
     "@emotion/css": "^10.0.27",
-    "@emotion/react": "^11.0.0-next.15",
+    "@emotion/react": "^11.0.0",
     "@emotion/styled": "^10.0.27",
     "@emotion/styled-base": "^10.0.31",
     "aphrodite": "^2.4.0",
@@ -39,7 +39,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-flow": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
-    "@emotion/babel-plugin": "^11.0.0-next.15",
+    "@emotion/babel-plugin": "^11.0.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
     "babel-plugin-react-native-web": "0.13.8",
