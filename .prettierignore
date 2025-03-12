@@ -1,7 +1,4 @@
-# Yarn 2
-/.yarnrc.yml
-/.yarn/
-/.pnp.*
+/pnpm-lock.yaml
 
 # Build results
 /dist/

@@ -3,8 +3,8 @@ CSS-in-JS benchmark
 Benchmarks of vairous CSS-in-JS libraries. **[Try it now!]**
 
 ```bash
-yarn
-yarn build
+pnpm i
+pnpm build
 
 # Benchmark
 open index.html
