@@ -24,11 +24,9 @@
         }
       }
     ],
-    "@babel/preset-react",
-    "@babel/preset-flow"
+    "@babel/preset-react"
   ],
   "plugins": [
-    "@babel/plugin-transform-flow-strip-types",
     [
       "babel-plugin-transform-react-remove-prop-types",
       {

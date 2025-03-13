@@ -90,15 +90,9 @@ importers:
       '@babel/plugin-proposal-class-properties':
         specifier: ^7.18.6
         version: 7.18.6(@babel/core@7.26.10)
-      '@babel/plugin-transform-flow-strip-types':
-        specifier: ^7.26.5
-        version: 7.26.5(@babel/core@7.26.10)
       '@babel/preset-env':
         specifier: ^7.26.9
         version: 7.26.9(@babel/core@7.26.10)
-      '@babel/preset-flow':
-        specifier: ^7.25.9
-        version: 7.25.9(@babel/core@7.26.10)
       '@babel/preset-react':
         specifier: ^7.26.3
         version: 7.26.3(@babel/core@7.26.10)
@@ -123,9 +117,6 @@ importers:
       css-loader:
         specifier: ^4.3.0
         version: 4.3.0(webpack@5.98.0)
-      flow-bin:
-        specifier: ^0.132.0
-        version: 0.132.0
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -2329,11 +2320,6 @@ packages:
 
   flat@5.0.2:
     resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
-    hasBin: true
-
-  flow-bin@0.132.0:
-    resolution: {integrity: sha512-S1g/vnAyNaLUdajmuUHCMl30qqye12gS6mr4LVyswf1k+JDF4efs6SfKmptuvnpitF3LGCVf0TIffChP8ljwnw==}
-    engines: {node: '>=0.10.0'}
     hasBin: true
 
   flow-enums-runtime@0.0.6:
@@ -7581,8 +7567,6 @@ snapshots:
       path-exists: 4.0.0
 
   flat@5.0.2: {}
-
-  flow-bin@0.132.0: {}
 
   flow-enums-runtime@0.0.6: {}
 

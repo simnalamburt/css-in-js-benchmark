@@ -1,5 +1,3 @@
-/* @noflow */
-
 import { type Component } from 'react';
 import packageJson from '../package.json';
 
