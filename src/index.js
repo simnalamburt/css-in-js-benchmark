@@ -7,6 +7,8 @@ import SierpinskiTriangle from './cases/SierpinskiTriangle';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './index.css';
+
 const implementations = impl;
 const packageNames = Object.keys(implementations);
 
@@ -61,4 +63,4 @@ const tests = {
   }))
 };
 
-ReactDOM.render(<App tests={tests} />, document.querySelector('.root'));
+ReactDOM.render(<App tests={tests} />, document.getElementById('root'));
