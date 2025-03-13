@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native-web';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View
