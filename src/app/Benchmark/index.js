@@ -10,15 +10,13 @@ import * as Timing from './timing';
 import React, { Component } from 'react';
 import { getMean, getMedian, getStdDev } from './math';
 
-import type { BenchResultsType, FullSampleTimingType, SampleTimingType } from './types';
-
 export const BenchmarkType = {
   MOUNT: 'mount',
   UPDATE: 'update',
   UNMOUNT: 'unmount'
 };
 
-const shouldRender = (cycle: number, type: $Values<typeof BenchmarkType>): boolean => {
+const shouldRender = (cycle, type) => {
   switch (type) {
     // Render every odd iteration (first, third, etc)
     // Mounts and unmounts the component
@@ -33,7 +31,7 @@ const shouldRender = (cycle: number, type: $Values<typeof BenchmarkType>): boole
   }
 };
 
-const shouldRecord = (cycle: number, type: $Values<typeof BenchmarkType>): boolean => {
+const shouldRecord = (cycle, type) => {
   switch (type) {
     // Record every odd iteration (when mounted: first, third, etc)
     case BenchmarkType.MOUNT:
@@ -50,10 +48,10 @@ const shouldRecord = (cycle: number, type: $Values<typeof BenchmarkType>): boole
 };
 
 const isDone = (
-  cycle: number,
-  sampleCount: number,
-  type: $Values<typeof BenchmarkType>
-): boolean => {
+  cycle,
+  sampleCount,
+  type
+) => {
   switch (type) {
     case BenchmarkType.MOUNT:
       return cycle >= sampleCount * 2 - 1;
@@ -66,32 +64,16 @@ const isDone = (
   }
 };
 
-const sortNumbers = (a: number, b: number): number => a - b;
-
-type BenchmarkPropsType = {
-  component: typeof React.Component,
-  forceLayout?: boolean,
-  getComponentProps: Function,
-  onComplete: (x: BenchResultsType) => void,
-  sampleCount: number,
-  timeout: number,
-  type: $Values<typeof BenchmarkType>
-};
-
-type BenchmarkStateType = {
-  componentProps: Object,
-  cycle: number,
-  running: boolean
-};
+const sortNumbers = (a, b) => a - b;
 
 /**
  * Benchmark
  * TODO: documentation
  */
-export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkStateType> {
-  _raf: ?Function;
-  _startTime: number;
-  _samples: Array<SampleTimingType>;
+export default class Benchmark extends Component {
+  _raf;
+  _startTime;
+  _samples;
 
   static defaultProps = {
     sampleCount: 50,
@@ -101,7 +83,7 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
 
   static Type = BenchmarkType;
 
-  constructor(props: BenchmarkPropsType, context?: {}) {
+  constructor(props, context) {
     super(props, context);
     const cycle = 0;
     const componentProps = props.getComponentProps({ cycle });
@@ -114,13 +96,13 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
     this._samples = [];
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps: BenchmarkPropsType) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps) {
       this.setState(state => ({ componentProps: nextProps.getComponentProps(state.cycle) }));
     }
   }
 
-  UNSAFE_componentWillUpdate(nextProps: BenchmarkPropsType, nextState: BenchmarkStateType) {
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
     if (nextState.running && !this.state.running) {
       this._startTime = Timing.now();
     }
@@ -189,19 +171,19 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
     }
 
     this._raf = window.requestAnimationFrame(() => {
-      this.setState((state: BenchmarkStateType) => ({
+      this.setState((state) => ({
         cycle: state.cycle + 1,
         componentProps
       }));
     });
   }
 
-  getSamples(): Array<FullSampleTimingType> {
+  getSamples() {
     return this._samples.reduce(
       (
-        memo: Array<FullSampleTimingType>,
-        { scriptingStart, scriptingEnd, layoutStart, layoutEnd }: SampleTimingType
-      ): Array<FullSampleTimingType> => {
+        memo,
+        { scriptingStart, scriptingEnd, layoutStart, layoutEnd }
+      ) => {
         memo.push({
           start: scriptingStart,
           end: layoutEnd || scriptingEnd || 0,
@@ -216,7 +198,7 @@ export default class Benchmark extends Component<BenchmarkPropsType, BenchmarkSt
     );
   }
 
-  _handleComplete(endTime: number) {
+  _handleComplete(endTime) {
     const { onComplete } = this.props;
     const samples = this.getSamples();
 
