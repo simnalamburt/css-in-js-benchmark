@@ -47,11 +47,7 @@ const shouldRecord = (cycle, type) => {
   }
 };
 
-const isDone = (
-  cycle,
-  sampleCount,
-  type
-) => {
+const isDone = (cycle, sampleCount, type) => {
   switch (type) {
     case BenchmarkType.MOUNT:
       return cycle >= sampleCount * 2 - 1;
@@ -171,7 +167,7 @@ export default class Benchmark extends Component {
     }
 
     this._raf = window.requestAnimationFrame(() => {
-      this.setState((state) => ({
+      this.setState(state => ({
         cycle: state.cycle + 1,
         componentProps
       }));
@@ -180,10 +176,7 @@ export default class Benchmark extends Component {
 
   getSamples() {
     return this._samples.reduce(
-      (
-        memo,
-        { scriptingStart, scriptingEnd, layoutStart, layoutEnd }
-      ) => {
+      (memo, { scriptingStart, scriptingEnd, layoutStart, layoutEnd }) => {
         memo.push({
           start: scriptingStart,
           end: layoutEnd || scriptingEnd || 0,

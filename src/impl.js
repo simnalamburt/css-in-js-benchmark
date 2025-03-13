@@ -30,7 +30,7 @@ function packageFromDirname(name) {
   }
 }
 
-const toImplementations = (context) =>
+const toImplementations = context =>
   context.keys().map(path => {
     const components = context(path).default;
     const name = path.split('/')[1];
@@ -39,7 +39,7 @@ const toImplementations = (context) =>
     return { components, name, version };
   });
 
-const toObject = (impls) =>
+const toObject = impls =>
   impls.reduce((acc, impl) => {
     acc[impl.name] = impl;
     return acc;
