@@ -5,9 +5,7 @@ Benchmarks of vairous CSS-in-JS libraries. **[Try it now!]**
 ```bash
 pnpm i
 pnpm build
-
-# Benchmark
-open index.html
+pnpm dev
 
 # Bundle size analysis
 open dist/report.html
