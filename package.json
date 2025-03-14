@@ -2,7 +2,7 @@
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev",
-    "test": "biome check",
+    "test": "tsc && biome check",
     "fix": "biome check --fix"
   },
   "dependencies": {
@@ -35,7 +35,8 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@rsbuild/core": "^1.2.18",
-    "@rsbuild/plugin-react": "^1.1.1"
+    "@rsbuild/plugin-react": "^1.1.1",
+    "typescript": "^5.8.2"
   },
   "packageManager": "pnpm@10.6.2"
 }
