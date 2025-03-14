@@ -1,5 +1,5 @@
 import React from 'react';
-import { unstable_createElement, StyleSheet } from 'react-native-web';
+import { StyleSheet, unstable_createElement } from 'react-native-web';
 
 const styles = StyleSheet.create({
   root: {

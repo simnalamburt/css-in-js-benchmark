@@ -1,5 +1,5 @@
-import { StyleSheet, TouchableHighlight, Text } from 'react-native-web';
 import React from 'react';
+import { StyleSheet, Text, TouchableHighlight } from 'react-native-web';
 
 export default function Button(props) {
   const { accessibilityLabel, color, disabled, onPress, style, textStyle, testID, title } = props;

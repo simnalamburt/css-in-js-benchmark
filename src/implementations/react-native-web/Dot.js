@@ -1,4 +1,4 @@
-import { unstable_createElement as createElement, StyleSheet } from 'react-native-web';
+import { StyleSheet, unstable_createElement as createElement } from 'react-native-web';
 
 const Dot = ({ size, x, y, children, color }) =>
   createElement('div', {

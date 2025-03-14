@@ -1,6 +1,6 @@
-import { BenchmarkType } from '../app/Benchmark';
+import { interpolateBuPu, interpolatePurples, interpolateRdPu } from 'd3-scale-chromatic';
 import React from 'react';
-import { interpolatePurples, interpolateBuPu, interpolateRdPu } from 'd3-scale-chromatic';
+import { BenchmarkType } from '../app/Benchmark';
 
 const targetSize = 10;
 

@@ -1,5 +1,5 @@
-import { BenchmarkType } from '../app/Benchmark';
 import React from 'react';
+import { BenchmarkType } from '../app/Benchmark';
 
 export default function TextTree(props) {
   const { breadth, components, depth, id, wrap } = props;

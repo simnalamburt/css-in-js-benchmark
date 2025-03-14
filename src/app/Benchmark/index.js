@@ -6,9 +6,9 @@
 
 /* global $Values */
 
-import * as Timing from './timing';
 import React, { Component } from 'react';
 import { getMean, getMedian, getStdDev } from './math';
+import * as Timing from './timing';
 
 export const BenchmarkType = {
   MOUNT: 'mount',

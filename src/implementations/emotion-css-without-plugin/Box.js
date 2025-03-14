@@ -1,7 +1,7 @@
-import React from 'react';
-import View from './View';
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import React from 'react';
+import View from './View';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View

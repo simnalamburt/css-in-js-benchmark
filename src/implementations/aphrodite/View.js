@@ -1,5 +1,5 @@
+import { StyleSheet, css } from 'aphrodite';
 import React from 'react';
-import { css, StyleSheet } from 'aphrodite';
 
 class View extends React.Component {
   render() {

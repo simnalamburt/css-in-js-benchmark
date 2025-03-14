@@ -1,6 +1,6 @@
-import React from 'react';
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import React from 'react';
 
 class View extends React.Component {
   render() {

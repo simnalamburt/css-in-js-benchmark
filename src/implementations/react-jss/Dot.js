@@ -1,5 +1,5 @@
-import injectSheet from 'react-jss';
 import React from 'react';
+import injectSheet from 'react-jss';
 
 const Dot = ({ classes, children }) => <div className={classes.root}>{children}</div>;
 

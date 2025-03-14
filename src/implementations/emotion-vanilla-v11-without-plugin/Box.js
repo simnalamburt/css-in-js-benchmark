@@ -1,6 +1,6 @@
+import { css } from '@emotion-v11/css';
 import React from 'react';
 import View from './View';
-import { css } from '@emotion-v11/css';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View
@@ -9,11 +9,13 @@ const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other 
       align-self: flex-start;
       flex-direction: ${layout};
       padding: ${outer ? 4 : 0}px;
-      ${fixed &&
-      `
+      ${
+        fixed &&
+        `
         width: 6px;
         height: 6px;
-      `}
+      `
+      }
       background-color: ${getColor(color)};
     `}
   />

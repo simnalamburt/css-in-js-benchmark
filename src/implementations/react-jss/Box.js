@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss';
 import React from 'react';
+import { createUseStyles } from 'react-jss';
 import View from './View';
 
 const useStyles = createUseStyles(theme => ({

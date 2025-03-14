@@ -1,5 +1,5 @@
-import React from 'react';
 import { object } from 'prop-types';
+import React from 'react';
 import { View } from 'reactxp';
 
 class Provider extends React.Component {

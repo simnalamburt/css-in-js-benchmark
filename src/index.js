@@ -1,8 +1,8 @@
 import App from './app/App';
-import impl from './impl';
+import SierpinskiTriangle from './cases/SierpinskiTriangle';
 import TextTree from './cases/TextTree';
 import Tree from './cases/Tree';
-import SierpinskiTriangle from './cases/SierpinskiTriangle';
+import impl from './impl';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

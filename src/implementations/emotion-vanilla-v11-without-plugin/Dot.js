@@ -1,5 +1,5 @@
-import React from 'react';
 import { css } from '@emotion-v11/css';
+import React from 'react';
 
 const Dot = ({ size, x, y, children, color }) => (
   <div

@@ -1,6 +1,6 @@
-import Text from './Text';
-import { StyleSheet, View } from 'react-native-web';
 import React, { Fragment } from 'react';
+import { StyleSheet, View } from 'react-native-web';
+import Text from './Text';
 
 const fmt = time => {
   const i = Number(Math.round(time + 'e2') + 'e-2').toFixed(2);

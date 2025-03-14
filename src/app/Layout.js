@@ -1,6 +1,6 @@
-import { colors } from './theme';
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native-web';
+import { colors } from './theme';
 
 export default class Layout extends Component {
   state = {

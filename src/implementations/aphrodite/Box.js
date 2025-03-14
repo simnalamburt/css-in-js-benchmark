@@ -1,6 +1,6 @@
+import { StyleSheet } from 'aphrodite';
 import React from 'react';
 import View from './View';
-import { StyleSheet } from 'aphrodite';
 
 const Box = ({ color, fixed = false, layout = 'column', outer = false, ...other }) => (
   <View
