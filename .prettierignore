@@ -1,7 +1,0 @@
-/pnpm-lock.yaml
-
-# Build results
-/dist/
-
-# Markdowns
-*.md

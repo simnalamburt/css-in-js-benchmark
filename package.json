@@ -2,8 +2,8 @@
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev",
-    "test": "prettier --check .",
-    "fmt": "prettier --write ."
+    "test": "biome check",
+    "fix": "biome check --fix"
   },
   "dependencies": {
     "@emotion-v11/css": "npm:@emotion/css@^11.13.5",
@@ -33,15 +33,9 @@
     "styletron-react": "^5.2.7"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@rsbuild/core": "^1.2.18",
-    "@rsbuild/plugin-react": "^1.1.1",
-    "prettier": "^2.8.8"
-  },
-  "prettier": {
-    "arrowParens": "avoid",
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "none"
+    "@rsbuild/plugin-react": "^1.1.1"
   },
   "packageManager": "pnpm@10.6.2"
 }

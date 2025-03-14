@@ -1,0 +1,16 @@
+{
+  "files": {
+    "ignore": ["dist"]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "lineWidth": 100,
+      "quoteStyle": "single",
+      "trailingCommas": "none"
+    }
+  }
+}
