@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native-web';
 import Text from './Text';
 
 const fmt = time => {
-  const i = Number(Math.round(time + 'e2') + 'e-2').toFixed(2);
+  const i = Number(`${Math.round(`${time}e2`)}e-2`).toFixed(2);
   return 10 / i > 1 ? `0${i}` : i;
 };
 

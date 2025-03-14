@@ -3,7 +3,6 @@ import { Styles, View } from 'reactxp';
 
 const Dot = ({ size, x, y, children, color }) => (
   <View
-    children={children}
     style={[
       styles.root,
       {
@@ -15,7 +14,9 @@ const Dot = ({ size, x, y, children, color }) => (
         marginTop: `${y}px`
       }
     ]}
-  />
+  >
+    {children}
+  </View>
 );
 
 const styles = {

@@ -22,7 +22,6 @@ export default function SierpinskiTriangle(props) {
       case 2:
         fn = interpolateBuPu;
         break;
-      case 3:
       default:
         fn = interpolateRdPu;
     }

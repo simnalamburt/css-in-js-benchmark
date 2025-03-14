@@ -92,7 +92,9 @@ export default class App extends Component {
                 {results.map((r, i) => (
                   <ReportCard
                     benchmarkName={r.benchmarkName}
-                    key={i}
+                    key={
+                      /* biome-ignore lint/suspicious/noArrayIndexKey: No adequate alternative */ i
+                    }
                     libraryName={r.libraryName}
                     libraryVersion={r.libraryVersion}
                     mean={r.mean}
