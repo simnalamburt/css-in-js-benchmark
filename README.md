@@ -3,9 +3,9 @@ CSS-in-JS benchmark
 Benchmarks of vairous CSS-in-JS libraries. **[Try it now!]**
 
 ```bash
-pnpm i
-pnpm build
-pnpm dev
+bun i
+bun run build
+bun dev
 
 # Bundle size analysis
 open dist/report.html
